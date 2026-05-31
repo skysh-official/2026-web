@@ -2,7 +2,7 @@ export const HACKATHON = {
   title: "2026 skysh",
   subtitle: "서울대 × 고려대 × 연세대 × 성균관대 × 한양대 연합 개발 대회",
   tagline:
-    "아이디어 검증부터 MVP 개발, 멘토링과 최종 발표까지 이어지는 실전형 개발 대회입니다.",
+    "아이디어 검증부터 MVP 개발, 현업 멘토링, 최종 발표까지 이어지는 5개 대학 연합 실전형 해커톤입니다.",
   registrationUrl: "https://forms.gle/urg9DfB1pz7ymgmV9",
   instagramUrl: "https://www.instagram.com/skysh_official",
   instagramHandle: "@skysh_official",
@@ -63,7 +63,7 @@ export const HACKATHON = {
       date: "7.4",
       day: "토",
       title: "본선 최종 발표",
-      sub: "프로덕트와 BM 최종 심사",
+      sub: "프로덕트와 비즈니스 모델 최종 심사",
       phase: "phase2" as const,
       major: true,
       range: false,
@@ -77,9 +77,9 @@ export const HACKATHON = {
       "개발 환경, 식사와 간식 제공",
     ],
     mentoring: "본선 진출팀에는 AWS 현업 전문가 멘토링이 제공됩니다",
-    finalSummary: "본선: 프로덕트와 BM 최종 심사",
+    finalSummary: "본선: 프로덕트와 비즈니스 모델 최종 심사",
     finalDetails: [
-      "실제 사용자 지표와 비즈니스 모델 타당성을 함께 심사합니다",
+      "문제 정의, MVP 완성도, 기술 구현력, 사용자 검증 가능성, 비즈니스 모델을 종합적으로 평가합니다",
       "심사 후 최종 순위를 확정하고 시상을 진행합니다",
     ],
   },
@@ -87,9 +87,9 @@ export const HACKATHON = {
     "우수 12팀 본선 진출",
     "AWS 현업 전문가 멘토링",
     "개발 환경, 식사와 간식 제공",
-    "프로덕트와 BM 구체화",
+    "프로덕트와 비즈니스 모델 구체화",
   ],
-  awardNote: "상금 등 세부 혜택은 공식 안내 기준에 따라 공지됩니다.",
+  awardNote: "상금 및 세부 혜택은 확정 후 본 페이지와 공식 인스타그램을 통해 공지됩니다.",
   awards: [
     { rank: "대상", teams: "1팀" },
     { rank: "금상", teams: "1팀" },
@@ -97,11 +97,14 @@ export const HACKATHON = {
     { rank: "동상", teams: "3팀" },
   ],
   application: {
-    target: "대학생 및 휴학생",
+    period: "신청폼과 공식 인스타그램 공지 기준",
+    target: "서울대·고려대·연세대·성균관대·한양대 재학생·휴학생·대학원생",
     teamRule: "개인 또는 2-4명 팀으로 신청할 수 있습니다",
     personalRule:
       "개인 참가자는 신청서의 희망 개발 분야와 경험을 바탕으로 운영진이 팀을 배정합니다",
     teamRuleDetail: "팀 참가자는 2-4명으로 팀을 구성해 신청합니다",
+    mixedTeamRule: "타교 학생과 구성한 연합팀도 참가할 수 있습니다",
+    clubRule: "각 학교 소속 학생이면 동아리 소속이 아니어도 참가할 수 있습니다",
   },
   clubContacts: [
     {

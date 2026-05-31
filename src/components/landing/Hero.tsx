@@ -43,6 +43,9 @@ export default function Hero() {
                 일정 보기
               </a>
             </div>
+            <p className="mt-3 font-mono text-xs leading-relaxed text-terminal-amber">
+              신청 기간은 신청폼과 공식 인스타그램 공지를 기준으로 안내됩니다.
+            </p>
           </div>
 
           <div className="emphasis-panel emphasis-panel--theme min-w-0 break-words lg:sticky lg:top-[calc(var(--site-header-h)+1rem)]">

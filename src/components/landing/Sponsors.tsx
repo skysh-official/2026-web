@@ -18,6 +18,8 @@ export default function Sponsors() {
               <img
                 src={s.logo}
                 alt={`${s.name} CI`}
+                width={176}
+                height={48}
                 className="max-h-12 w-full max-w-[11rem] object-contain object-left"
               />
             </div>

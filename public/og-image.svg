@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111820"/>
+      <stop offset="0.48" stop-color="#05070a"/>
+      <stop offset="1" stop-color="#0b1016"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#1c2832" stroke-width="1" opacity="0.55"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 0H4" stroke="#ffffff" stroke-width="1" opacity="0.045"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#fade)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.7"/>
+  <rect width="1200" height="630" fill="url(#scan)"/>
+
+  <path d="M70 82H1130" stroke="#25313c" stroke-width="2"/>
+  <path d="M70 548H1130" stroke="#25313c" stroke-width="2"/>
+
+  <g transform="translate(78 96)">
+    <text x="0" y="0" fill="#e8b84a" font-family="Consolas, 'Courier New', monospace" font-size="24" font-weight="700" letter-spacing="4">2026 OFFICIAL</text>
+    <text x="0" y="158" fill="#f3f4f6" font-family="Arial Black, Impact, sans-serif" font-size="150" font-weight="900" letter-spacing="-10">SKYSH</text>
+    <text x="5" y="235" fill="#f3f4f6" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="35">HACKATHON</text>
+    <text x="4" y="304" fill="#a8b0bd" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="500">Seoul x Korea x Yonsei x SKKU x Hanyang</text>
+    <text x="4" y="348" fill="#3dd68c" font-family="Consolas, 'Courier New', monospace" font-size="25" font-weight="700">6.27-6.28, 7.4  @ AWS Korea Gangnam</text>
+  </g>
+
+  <g transform="translate(850 138)">
+    <rect x="0" y="0" width="270" height="270" fill="none" stroke="#3dd68c" stroke-width="3"/>
+    <path d="M135 28L157 98L229 98L171 141L193 211L135 168L77 211L99 141L41 98L113 98Z" fill="#f3f4f6"/>
+    <text x="135" y="330" fill="#e8b84a" font-family="Consolas, 'Courier New', monospace" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="2">SKYSH-OFFICIAL</text>
+  </g>
+
+  <g transform="translate(70 580)">
+    <rect x="0" y="0" width="212" height="10" fill="#0b267f"/>
+    <rect x="212" y="0" width="212" height="10" fill="#8b0028"/>
+    <rect x="424" y="0" width="212" height="10" fill="#003876"/>
+    <rect x="636" y="0" width="212" height="10" fill="#68b82e"/>
+    <rect x="848" y="0" width="212" height="10" fill="#00549f"/>
+  </g>
+</svg>

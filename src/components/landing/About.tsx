@@ -11,10 +11,7 @@ export default function About() {
       </SectionTitle>
 
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-        <strong className="font-normal text-[var(--fg)]">{HACKATHON.title}</strong>는
-        서울대·고려대·연세대·성균관대·한양대 컴퓨터 동아리가 함께 만드는 연합 개발
-        대회입니다. 예선에서는 아이디어를 검증하고 MVP를 개발하며,
-        본선에서는 사용자 지표와 비즈니스 모델 타당성을 중심으로 심사합니다.
+        {`${HACKATHON.title}는 서울대·고려대·연세대·성균관대·한양대 컴퓨터 동아리가 함께 만드는 연합 개발 대회입니다. 예선에서는 아이디어를 검증하고 MVP를 개발하며, 본선에서는 문제 정의, 구현력, 사용자 검증 가능성과 비즈니스 모델을 중심으로 심사합니다.`}
       </p>
 
       <div className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">

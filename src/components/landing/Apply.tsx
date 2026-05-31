@@ -8,14 +8,16 @@ export default function Apply() {
         <div className="min-w-0">
           <SectionLabel>신청</SectionLabel>
           <SectionTitle className="section-title-wide">
-            <span className="text-terminal-green">개인 또는 팀</span>으로 신청할 수 있습니다
+            개인 또는 팀으로 신청할 수 있습니다
           </SectionTitle>
           <p className="mt-4 max-w-md text-[var(--muted)]">
-            {HACKATHON.application.target}은 개인 또는 팀으로 구글폼을 통해
-            신청할 수 있습니다.
+            {`${HACKATHON.application.target}은 개인 또는 팀으로 구글폼을 통해 신청할 수 있습니다.`}
           </p>
 
           <p className="mt-4 font-mono text-xs text-terminal-amber">
+            신청 기간 {HACKATHON.application.period}
+          </p>
+          <p className="mt-1 font-mono text-xs text-terminal-amber">
             참가자 확정 및 안내 {HACKATHON.confirmationDate}
           </p>
         </div>
@@ -30,6 +32,8 @@ export default function Apply() {
               <li>{HACKATHON.application.teamRule}</li>
               <li>{HACKATHON.application.personalRule}</li>
               <li>{HACKATHON.application.teamRuleDetail}</li>
+              <li>{HACKATHON.application.mixedTeamRule}</li>
+              <li>{HACKATHON.application.clubRule}</li>
             </ul>
             <a
               href={HACKATHON.registrationUrl}

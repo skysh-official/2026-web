@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { HACKATHON } from "@/lib/hackathon";
 import { Section, SectionLabel, SectionTitle } from "@/components/landing/Section";
 
@@ -8,6 +5,14 @@ const FAQS = [
   {
     q: "참가자 확정 및 안내는 언제인가요?",
     a: "참가자 확정 결과와 행사 세부 안내는 6.22(월)에 전달됩니다.",
+  },
+  {
+    q: "누가 참가할 수 있나요?",
+    a: "서울대·고려대·연세대·성균관대·한양대 재학생, 휴학생, 대학원생이 참가할 수 있습니다. 각 학교 소속 학생이면 동아리 소속이 아니어도 참가 가능합니다.",
+  },
+  {
+    q: "타교 학생과 팀을 구성해도 되나요?",
+    a: "가능합니다. 5개 학교 소속 참가자끼리는 학교가 섞인 연합팀으로도 신청할 수 있습니다.",
   },
   {
     q: "팀으로 참가할 수 있나요?",
@@ -28,41 +33,30 @@ const FAQS = [
 ];
 
 export default function FAQ() {
-  const [open, setOpen] = useState<number | null>(null);
-
   return (
     <Section id="faq" className="section-muted border-t border-[var(--border)]">
       <SectionLabel>FAQ</SectionLabel>
       <SectionTitle>자주 묻는 질문</SectionTitle>
       <div className="skysh-stripe mt-5 h-1 w-40" aria-hidden="true" />
 
-      <ul className="mt-8 divide-y divide-[var(--border)]/80 border border-[var(--border)]/80">
-        {FAQS.map((f, i) => (
-          <li key={f.q}>
-            <button
-              type="button"
-              className="flex w-full items-center justify-between gap-4 px-4 py-3.5 text-left sm:px-5"
-              onClick={() => setOpen(open === i ? null : i)}
-              aria-expanded={open === i}
-              aria-controls={`faq-panel-${i}`}
-            >
+      <div className="mt-8 divide-y divide-[var(--border)]/80 border border-[var(--border)]/80">
+        {FAQS.map((f) => (
+          <details key={f.q} className="group">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-3.5 text-left [&::-webkit-details-marker]:hidden sm:px-5">
               <span className="text-sm text-[var(--fg)]">{f.q}</span>
-              <span className="shrink-0 font-mono text-sm text-[var(--muted)]">
-                {open === i ? "−" : "+"}
+              <span className="shrink-0 font-mono text-sm text-[var(--muted)] group-open:hidden">
+                +
               </span>
-            </button>
-            {open === i && (
-              <div
-                id={`faq-panel-${i}`}
-                role="region"
-                className="border-t border-[var(--border)]/60 bg-[var(--bg-elevated)]/50 px-4 py-3.5 sm:px-5"
-              >
-                <p className="text-sm text-[var(--muted)]">{f.a}</p>
-              </div>
-            )}
-          </li>
+              <span className="hidden shrink-0 font-mono text-sm text-[var(--muted)] group-open:block">
+                -
+              </span>
+            </summary>
+            <div className="border-t border-[var(--border)]/60 bg-[var(--bg-elevated)]/50 px-4 py-3.5 sm:px-5">
+              <p className="text-sm text-[var(--muted)]">{f.a}</p>
+            </div>
+          </details>
         ))}
-      </ul>
+      </div>
     </Section>
   );
 }
