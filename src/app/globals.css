@@ -1,0 +1,273 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0c0e12;
+  --bg-elevated: #12151c;
+  --fg: #e8eaed;
+  --muted: #8b929e;
+  --border: #2a303c;
+  --terminal-green: #3dd68c;
+  --terminal-amber: #e8b84a;
+
+  --snu: #071b78;
+  --korea: #a00035;
+  --yonsei: #003f86;
+  --skku: #68b82e;
+  --hanyang: #12588f;
+  --snu-ui: #6f8dff;
+  --korea-ui: #ff5b8a;
+  --yonsei-ui: #5fa7ff;
+  --skku-ui: #8de34a;
+  --hanyang-ui: #6bb7ee;
+
+  --page-max: 72rem;
+  --page-narrow: 40rem;
+  --page-pad: clamp(1rem, 4vw, 1.5rem);
+  --section-y: clamp(3.5rem, 8vw, 7rem);
+  --nav-h: 3.25rem;
+  --site-header-h: var(--nav-h);
+
+  --text-hero: clamp(2rem, 5vw + 1rem, 4.5rem);
+  --text-h2: clamp(1.625rem, 3vw + 0.5rem, 2.5rem);
+  --text-body: clamp(0.9375rem, 1vw + 0.75rem, 1.125rem);
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-snu: var(--snu);
+  --color-korea: var(--korea);
+  --color-yonsei: var(--yonsei);
+  --color-skku: var(--skku);
+  --color-hanyang: var(--hanyang);
+  --color-snu-ui: var(--snu-ui);
+  --color-korea-ui: var(--korea-ui);
+  --color-yonsei-ui: var(--yonsei-ui);
+  --color-skku-ui: var(--skku-ui);
+  --color-hanyang-ui: var(--hanyang-ui);
+  --color-terminal-green: var(--terminal-green);
+  --color-terminal-amber: var(--terminal-amber);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--site-header-h) + 0.75rem);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--terminal-green) 35%, transparent);
+  color: var(--fg);
+}
+
+.page-container {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--page-pad);
+}
+
+.page-container-narrow {
+  width: 100%;
+  max-width: var(--page-narrow);
+  margin-inline: auto;
+  padding-inline: var(--page-pad);
+}
+
+.section {
+  padding-block: var(--section-y);
+  scroll-margin-top: calc(var(--site-header-h) + 0.75rem);
+}
+
+.section-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: clamp(0.75rem, 1.5vw, 0.8125rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--terminal-amber);
+}
+
+.section-title {
+  margin-top: 1rem;
+  max-width: 42rem;
+  font-size: var(--text-h2);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.section-title-wide {
+  max-width: none;
+}
+
+.skysh-wordmark {
+  display: inline-flex;
+  max-width: 100%;
+  flex-direction: column;
+  color: var(--fg);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.skysh-wordmark__main {
+  display: block;
+  font-weight: 950;
+  line-height: 0.82;
+  white-space: nowrap;
+}
+
+.skysh-wordmark__subtitle {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  font-weight: 650;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.skysh-wordmark__subtitle span {
+  min-width: 0;
+  text-align: center;
+}
+
+.skysh-wordmark__subtitle span:first-child {
+  text-align: left;
+}
+
+.skysh-wordmark__subtitle span:last-child {
+  text-align: right;
+}
+
+.skysh-wordmark--hero {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.skysh-wordmark--hero .skysh-wordmark__main {
+  font-size: clamp(3rem, 13.5vw, 9.6rem);
+}
+
+.skysh-wordmark--hero .skysh-wordmark__subtitle {
+  margin-top: clamp(0.5rem, 1.6vw, 1rem);
+  font-size: clamp(0.875rem, 4vw, 3.05rem);
+}
+
+.skysh-wordmark--nav .skysh-wordmark__main {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.skysh-wordmark--footer .skysh-wordmark__main {
+  font-size: 1.5rem;
+}
+
+.skysh-wordmark--footer .skysh-wordmark__subtitle {
+  margin-top: 0.22rem;
+  font-size: 0.75rem;
+}
+
+.skysh-stripe {
+  background: linear-gradient(
+    90deg,
+    var(--snu) 0%,
+    var(--snu) 20%,
+    var(--korea) 20%,
+    var(--korea) 40%,
+    var(--yonsei) 40%,
+    var(--yonsei) 60%,
+    var(--skku) 60%,
+    var(--skku) 80%,
+    var(--hanyang) 80%,
+    var(--hanyang) 100%
+  );
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.scanlines::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: clamp(32px, 4vw, 48px) clamp(32px, 4vw, 48px);
+  background-position: center top;
+}
+
+.card-grid {
+  display: grid;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  align-items: stretch;
+}
+
+.card-grid > * {
+  min-height: 100%;
+}
+
+.emphasis-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: clamp(0.75rem, 1.5vw, 0.8125rem);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terminal-amber);
+}
+
+.emphasis-panel {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.emphasis-panel--theme {
+  border-color: color-mix(in srgb, var(--terminal-green) 45%, var(--border));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--terminal-green) 8%, var(--bg-elevated)) 0%,
+    var(--bg-elevated) 60%
+  );
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--terminal-green) 12%, transparent);
+}
+
+.highlight-cell:hover {
+  background: color-mix(in srgb, var(--terminal-green) 4%, var(--bg));
+}
+
+.section-muted .section-label {
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+.section-muted .section-title {
+  font-size: clamp(1.375rem, 2.5vw + 0.5rem, 2rem);
+  color: color-mix(in srgb, var(--fg) 85%, var(--muted));
+}

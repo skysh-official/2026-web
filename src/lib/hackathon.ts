@@ -1,0 +1,138 @@
+export const HACKATHON = {
+  title: "2026 skysh",
+  subtitle: "서울대 × 고려대 × 연세대 × 성균관대 × 한양대 연합 개발 대회",
+  tagline:
+    "단순한 해커톤을 넘어, 전문가 멘토링과 실서비스 운영 경험을 통해 지속 가능한 개발 역량을 만듭니다.",
+  registrationUrl: "https://forms.gle/urg9DfB1pz7ymgmV9",
+  instagramUrl: "https://www.instagram.com/skysh_official",
+  instagramHandle: "@skysh_official",
+  dates: "6.22, 6.27-6.28, 7.4",
+  place: "AWS Korea 강남 사옥",
+  confirmationDate: "6.22(월)",
+  sponsors: [
+    {
+      name: "AWS",
+      accent: "#ff9900",
+      logo: "sponsors/aws.svg",
+    },
+    {
+      name: "Hyundai Mobis",
+      accent: "#00aad2",
+      logo: "sponsors/hyundai-mobis.svg",
+    },
+    {
+      name: "Jane Street",
+      accent: "#1f63ff",
+      logo: "sponsors/jane-street.svg",
+    },
+    {
+      name: "Upbit",
+      accent: "#0062df",
+      logo: "sponsors/upbit.svg",
+    },
+  ],
+  schedule: [
+    {
+      date: "6.22",
+      day: "월",
+      title: "참가자 확정 및 안내",
+      sub: "선발 결과 및 행사 안내",
+      phase: "notice" as const,
+      major: false,
+      range: false,
+    },
+    {
+      date: "6.27",
+      day: "토",
+      title: "예선 개발",
+      sub: "아이디어 검증 및 MVP 개발",
+      phase: "phase1" as const,
+      major: true,
+      range: false,
+    },
+    {
+      date: "6.28",
+      day: "일",
+      title: "예선 발표 및 심사",
+      sub: "프로토타입 심사와 본선 진출팀 선발",
+      phase: "phase1" as const,
+      major: true,
+      range: false,
+    },
+    {
+      date: "7.4",
+      day: "토",
+      title: "본선 최종 발표",
+      sub: "프로덕트 및 BM 최종 심사",
+      phase: "phase2" as const,
+      major: true,
+      range: false,
+    },
+  ],
+  posterNotes: {
+    phase1Summary: "예선: 아이디어 및 프로토타입 심사",
+    phase1Details: [
+      "무박 2일 동안 MVP를 개발하며 실전 개발 경험을 쌓습니다",
+      "우수 12팀은 본선에 진출합니다",
+      "개발 환경, 식사, 간식 제공",
+    ],
+    mentoring: "본선 진출팀에는 AWS 현업 전문가 멘토링을 지원합니다",
+    finalSummary: "본선: 프로덕트 및 BM 최종 심사",
+    finalDetails: [
+      "실제 사용자 지표와 비즈니스 모델의 타당성을 함께 검토합니다",
+      "심사 후 최종 순위를 확정하고 시상을 진행합니다",
+    ],
+  },
+  benefits: [
+    "우수 12팀 본선 진출",
+    "AWS 현업 전문가 멘토링",
+    "개발 환경, 식사, 간식 제공",
+    "실서비스 운영 관점 점검",
+  ],
+  awardNote: "상금 등 세부 혜택은 공식 안내 기준으로 공지됩니다.",
+  awards: [
+    { rank: "대상", teams: "1팀" },
+    { rank: "금상", teams: "1팀" },
+    { rank: "은상", teams: "2팀" },
+    { rank: "동상", teams: "3팀" },
+  ],
+  application: {
+    target: "대학생 및 휴학생",
+    teamRule: "개인 또는 2-4명 팀으로 신청 가능",
+    personalRule:
+      "개인 참가자는 신청서의 희망 개발 분야와 경험을 바탕으로 운영진이 팀 배정을 도와드립니다",
+    teamRuleDetail: "팀 참가자는 2-4명으로 팀을 구성해 팀 정보를 제출합니다",
+  },
+  clubContacts: [
+    {
+      school: "고려대학교",
+      club: "KUCC",
+      contact: "anamkucc314@gmail.com",
+      color: "var(--korea-ui)",
+    },
+    {
+      school: "서울대학교",
+      club: "SCSC",
+      contact: "scsc.snu@gmail.com",
+      color: "var(--snu-ui)",
+    },
+    {
+      school: "성균관대학교",
+      club: "Comit",
+      contact: "comit.skku@gmail.com",
+      color: "var(--skku-ui)",
+    },
+    {
+      school: "연세대학교",
+      club: "YCC",
+      contact: "ycc@ycc.club",
+      color: "var(--yonsei-ui)",
+    },
+    {
+      school: "한양대학교",
+      club: "Forif",
+      contact: "https://forif.org",
+      color: "var(--hanyang-ui)",
+    },
+  ],
+} as const;
