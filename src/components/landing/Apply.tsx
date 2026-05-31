@@ -8,7 +8,7 @@ export default function Apply() {
         <div className="min-w-0">
           <SectionLabel>신청</SectionLabel>
           <SectionTitle className="section-title-wide">
-            <span className="text-terminal-green">개인 또는 팀</span>으로 신청하세요
+            <span className="text-terminal-green">개인 또는 팀</span>으로 신청할 수 있습니다
           </SectionTitle>
           <p className="mt-4 max-w-md text-[var(--muted)]">
             {HACKATHON.application.target}은 개인 또는 팀으로 구글폼을 통해
@@ -24,7 +24,7 @@ export default function Apply() {
           <div className="emphasis-panel emphasis-panel--theme p-6 sm:p-8">
             <p className="emphasis-label">신청</p>
             <h3 className="mt-3 text-2xl font-bold leading-tight">
-              신청은 구글폼에서 진행합니다
+              참가 신청은 구글폼에서 진행합니다
             </h3>
             <ul className="mt-4 grid gap-2 text-sm leading-relaxed text-[var(--muted)]">
               <li>{HACKATHON.application.teamRule}</li>

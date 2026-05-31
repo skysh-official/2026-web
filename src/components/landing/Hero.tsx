@@ -88,8 +88,8 @@ export default function Hero() {
             <p className="mt-4 font-mono text-sm text-terminal-amber">장소</p>
             <p className="mt-1 text-lg font-bold break-words">{HACKATHON.place}</p>
             <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
-              우수 12팀은 본선에 진출하고 멘토링을 통해 실서비스 관점까지
-              점검합니다.
+              본선 진출팀은 멘토링을 통해 프로덕트와 비즈니스 모델을 한 번 더
+              다듬습니다.
             </p>
           </div>
         </div>

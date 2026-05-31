@@ -11,8 +11,8 @@ export default function Benefits() {
             시상 및 <span className="font-mono text-terminal-green">참가 혜택</span>
           </SectionTitle>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-            예선에서 선발된 우수 12팀은 본선에 진출해 최종 발표를 진행하며, AWS 현업
-            전문가 멘토링을 통해 실서비스 운영 관점까지 점검합니다.
+            예선에서 선발된 우수 12팀은 본선 최종 발표에 진출하며, AWS 현업
+            전문가 멘토링을 통해 프로덕트와 비즈니스 모델을 구체화합니다.
           </p>
         </div>
 

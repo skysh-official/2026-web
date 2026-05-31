@@ -61,7 +61,7 @@ export default function Hosts() {
             href={h.homepage}
             target="_blank"
             rel="noreferrer"
-            aria-label={`${h.uni} ${h.club} 홈페이지 열기`}
+            aria-label={`${h.uni} ${h.club} 홈페이지 보기`}
             className="group flex min-h-[13rem] flex-col border border-[var(--border)]/80 bg-[var(--bg-elevated)]/40 p-4 transition hover:-translate-y-0.5 hover:border-[var(--fg)]/50 hover:bg-[var(--bg-elevated)]/75"
             style={{ borderTopWidth: 2, borderTopColor: h.color }}
           >
@@ -85,7 +85,7 @@ export default function Hosts() {
               className="mt-4 font-mono text-xs uppercase tracking-wider opacity-80 transition group-hover:opacity-100"
               style={{ color: h.color }}
             >
-              홈페이지 열기 →
+              홈페이지 보기 →
             </span>
           </a>
         ))}
