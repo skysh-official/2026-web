@@ -44,7 +44,7 @@ export default function Hero() {
               </a>
             </div>
             <p className="mt-3 font-mono text-xs leading-relaxed text-terminal-amber">
-              신청 기간은 신청폼과 공식 인스타그램 공지를 기준으로 안내됩니다.
+              접수 마감은 6/20(토)입니다.
             </p>
           </div>
 

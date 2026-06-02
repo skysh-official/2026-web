@@ -86,10 +86,10 @@ export const HACKATHON = {
     { rank: "대상", prize: "150만원" },
     { rank: "최우수상", prize: "100만원" },
     { rank: "은상", prize: "50만원" },
-    { rank: "동상", prize: "50만원" },
+    { rank: "동상", prize: "50만원 상당 비트코인" },
   ],
   application: {
-    period: "신청폼과 공식 인스타그램 공지 기준",
+    period: "접수 마감 6/20(토)",
     target: "서울대·고려대·연세대·성균관대·한양대 재학생·휴학생·대학원생",
     teamRule: "개인 또는 2-4명 팀으로 신청할 수 있습니다",
     personalRule:

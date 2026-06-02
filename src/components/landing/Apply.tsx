@@ -15,7 +15,7 @@ export default function Apply() {
           </p>
 
           <p className="mt-4 font-mono text-xs text-terminal-amber">
-            신청 기간 {HACKATHON.application.period}
+            {HACKATHON.application.period}
           </p>
           <p className="mt-1 font-mono text-xs text-terminal-amber">
             참가자 확정 및 안내 {HACKATHON.confirmationDate}
