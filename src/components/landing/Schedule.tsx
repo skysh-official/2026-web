@@ -10,11 +10,11 @@ const DETAILS: Record<string, { place: string; detail: string }> = {
     detail: "참가자 확정 결과와 행사 세부 내용을 안내합니다.",
   },
   phase1: {
-    place: HACKATHON.place,
+    place: HACKATHON.phase1Place,
     detail: HACKATHON.posterNotes.phase1Details.join(" · "),
   },
   phase2: {
-    place: HACKATHON.place,
+    place: HACKATHON.finalPlace,
     detail: HACKATHON.posterNotes.finalDetails.join(" · "),
   },
 };
@@ -96,7 +96,7 @@ export default function Schedule() {
         />
         <ScheduleCard
           badge="예선"
-          date="6.27 (토) - 6.28 (일)"
+          date="6.28 (일)"
           title="예선 개발 및 발표"
           place={DETAILS.phase1.place}
           summary={HACKATHON.posterNotes.phase1Summary}

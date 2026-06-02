@@ -66,7 +66,7 @@ export default function Hero() {
                       : "text-4xl text-terminal-green sm:text-5xl"
                   }`}
                 >
-                  6.27-6.28
+                  6.28
                 </p>
               </div>
               <div className="border-t border-[var(--border)] pt-4">
@@ -88,8 +88,8 @@ export default function Hero() {
                 </p>
               </div>
             </div>
-            <p className="mt-4 font-mono text-sm text-terminal-amber">장소</p>
-            <p className="mt-1 text-lg font-bold break-words">{HACKATHON.place}</p>
+            <p className="mt-4 font-mono text-sm text-terminal-amber">예선 장소</p>
+            <p className="mt-1 text-lg font-bold break-words">{HACKATHON.phase1Place}</p>
             <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
               본선 진출팀은 멘토링을 통해 프로덕트와 비즈니스 모델을 한 번 더
               다듬습니다.

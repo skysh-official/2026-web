@@ -38,7 +38,7 @@ export default function Benefits() {
                   className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-b border-[var(--border)]/70 pb-3 last:border-b-0 last:pb-0"
                 >
                   <span className="text-base font-bold text-[var(--fg)]">{award.rank}</span>
-                  <span className="font-mono text-sm text-terminal-amber">{award.teams}</span>
+                  <span className="font-mono text-sm text-terminal-amber">{award.prize}</span>
                 </li>
               ))}
             </ul>

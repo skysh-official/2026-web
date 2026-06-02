@@ -6,8 +6,9 @@ export const HACKATHON = {
   registrationUrl: "https://forms.gle/urg9DfB1pz7ymgmV9",
   instagramUrl: "https://www.instagram.com/skysh_official",
   instagramHandle: "@skysh_official",
-  dates: "6.22, 6.27-6.28, 7.4",
-  place: "AWS Korea 강남 사옥",
+  dates: "6.22, 6.28, 7.4",
+  phase1Place: "올댓마인드 문래점",
+  finalPlace: "AWS Korea 강남 사옥",
   confirmationDate: "6.22(월)",
   sponsors: [
     {
@@ -42,19 +43,10 @@ export const HACKATHON = {
       range: false,
     },
     {
-      date: "6.27",
-      day: "토",
-      title: "예선 개발",
-      sub: "아이디어 검증과 MVP 개발",
-      phase: "phase1" as const,
-      major: true,
-      range: false,
-    },
-    {
       date: "6.28",
       day: "일",
-      title: "예선 발표 및 심사",
-      sub: "프로토타입 심사와 본선 진출팀 선발",
+      title: "예선 개발 및 발표",
+      sub: "아이디어 검증, MVP 개발, 발표 심사",
       phase: "phase1" as const,
       major: true,
       range: false,
@@ -72,7 +64,7 @@ export const HACKATHON = {
   posterNotes: {
     phase1Summary: "예선: 아이디어 및 프로토타입 심사",
     phase1Details: [
-      "무박 2일 동안 MVP를 개발하며 실전 개발을 경험합니다",
+      "하루 동안 MVP를 개발하고 발표하며 실전 개발을 경험합니다",
       "우수 12팀이 본선에 진출합니다",
       "개발 환경, 식사와 간식 제공",
     ],
@@ -89,12 +81,12 @@ export const HACKATHON = {
     "개발 환경, 식사와 간식 제공",
     "프로덕트와 비즈니스 모델 구체화",
   ],
-  awardNote: "상금 및 세부 혜택은 확정 후 본 페이지와 공식 인스타그램을 통해 공지됩니다.",
+  awardNote: "세부 혜택은 공식 인스타그램을 통해 추가 안내됩니다.",
   awards: [
-    { rank: "대상", teams: "1팀" },
-    { rank: "금상", teams: "1팀" },
-    { rank: "은상", teams: "2팀" },
-    { rank: "동상", teams: "3팀" },
+    { rank: "대상", prize: "150만원" },
+    { rank: "최우수상", prize: "100만원" },
+    { rank: "은상", prize: "50만원" },
+    { rank: "동상", prize: "50만원" },
   ],
   application: {
     period: "신청폼과 공식 인스타그램 공지 기준",
@@ -108,28 +100,28 @@ export const HACKATHON = {
   },
   clubContacts: [
     {
-      school: "고려대학교",
-      club: "KUCC",
-      contact: "anamkucc314@gmail.com",
-      color: "var(--korea-ui)",
-    },
-    {
       school: "서울대학교",
       club: "SCSC",
       contact: "scsc.snu@gmail.com",
       color: "var(--snu-ui)",
     },
     {
-      school: "성균관대학교",
-      club: "Comit",
-      contact: "comit.skku@gmail.com",
-      color: "var(--skku-ui)",
+      school: "고려대학교",
+      club: "KUCC",
+      contact: "anamkucc314@gmail.com",
+      color: "var(--korea-ui)",
     },
     {
       school: "연세대학교",
       club: "YCC",
       contact: "ycc@ycc.club",
       color: "var(--yonsei-ui)",
+    },
+    {
+      school: "성균관대학교",
+      club: "Comit",
+      contact: "comit.skku@gmail.com",
+      color: "var(--skku-ui)",
     },
     {
       school: "한양대학교",

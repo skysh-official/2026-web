@@ -9,7 +9,7 @@ const ITEMS = [
   {
     key: "phase1",
     label: "예선",
-    value: "6.27–6.28",
+    value: "6.28(일)",
     href: "#schedule",
     accent: "green" as const,
   },
@@ -22,8 +22,8 @@ const ITEMS = [
   },
   {
     key: "place",
-    label: "장소",
-    value: "AWS Korea 강남 사옥",
+    label: "예선 장소",
+    value: "올댓마인드 문래점",
     href: "#schedule",
     accent: "default" as const,
   },
