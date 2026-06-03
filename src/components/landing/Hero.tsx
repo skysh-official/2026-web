@@ -57,7 +57,7 @@ export default function Hero() {
                     finalPhaseActive ? "text-[var(--muted)]" : "text-terminal-green"
                   }`}
                 >
-                  예선
+                  1차
                 </p>
                 <p
                   className={`mt-1 font-mono font-bold leading-none ${
@@ -75,7 +75,7 @@ export default function Hero() {
                     finalPhaseActive ? "text-terminal-green" : "text-terminal-amber"
                   }`}
                 >
-                  본선
+                  2차
                 </p>
                 <p
                   className={`mt-1 font-mono font-bold leading-none ${
@@ -84,14 +84,14 @@ export default function Hero() {
                       : "text-3xl text-terminal-amber sm:text-4xl"
                   }`}
                 >
-                  7.4
+                  7.11
                 </p>
               </div>
             </div>
-            <p className="mt-4 font-mono text-sm text-terminal-amber">예선 장소</p>
+            <p className="mt-4 font-mono text-sm text-terminal-amber">1차 장소</p>
             <p className="mt-1 text-lg font-bold break-words">{HACKATHON.phase1Place}</p>
             <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
-              본선 진출팀은 멘토링을 통해 프로덕트와 비즈니스 모델을 한 번 더
+              2차 진출팀은 멘토링을 통해 프로덕트와 비즈니스 모델을 한 번 더
               다듬습니다.
             </p>
           </div>

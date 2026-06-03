@@ -11,14 +11,14 @@ export default function About() {
       </SectionTitle>
 
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-        {`${HACKATHON.title}는 서울대·고려대·연세대·성균관대·한양대 컴퓨터 동아리가 함께 만드는 연합 개발 대회입니다. 예선에서는 아이디어를 검증하고 MVP를 개발하며, 본선에서는 문제 정의, 구현력, 사용자 검증 가능성과 비즈니스 모델을 중심으로 심사합니다.`}
+        {`${HACKATHON.title}는 서울대·고려대·연세대·성균관대·한양대 컴퓨터 동아리가 함께 만드는 연합 개발 대회입니다. 1차 개발 밋업에서는 아이디어와 프로토타입을 심사하고, 2차 최종 발표에서는 프로덕트와 비즈니스 모델을 중심으로 심사합니다.`}
       </p>
 
       <div className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
         {[
           { stat: "2-4명", label: "팀 참가" },
           { stat: "개인", label: "개인 참가 가능" },
-          { stat: "12팀", label: "본선 진출" },
+          { stat: "12팀", label: "2차 진출" },
           { stat: "AWS", label: "현업 멘토링" },
         ].map((s) => (
           <div

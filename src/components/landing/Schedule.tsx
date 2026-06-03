@@ -27,7 +27,7 @@ export default function Schedule() {
     <Section id="schedule" className="border-t border-[var(--border)]">
       <SectionLabel>일정</SectionLabel>
       <SectionTitle className="section-title-wide">
-        예선과 본선 <span className="font-mono text-terminal-green">타임라인</span>
+        1차와 2차 <span className="font-mono text-terminal-green">타임라인</span>
       </SectionTitle>
 
       <div className="mt-8 pb-2 sm:mt-10">
@@ -95,9 +95,9 @@ export default function Schedule() {
           detail={DETAILS.notice.detail}
         />
         <ScheduleCard
-          badge="예선"
+          badge="1차"
           date="6.28 (일)"
-          title="예선 개발 및 발표"
+          title="개발 밋업"
           place={DETAILS.phase1.place}
           summary={HACKATHON.posterNotes.phase1Summary}
           detail={DETAILS.phase1.detail}
@@ -105,8 +105,8 @@ export default function Schedule() {
           emphasized={!finalPhaseActive}
         />
         <ScheduleCard
-          badge="본선"
-          date="7.4 (토)"
+          badge="2차"
+          date="7.11 (토)"
           title="최종 발표"
           place={DETAILS.phase2.place}
           summary={HACKATHON.posterNotes.finalSummary}
@@ -119,19 +119,19 @@ export default function Schedule() {
         <div className="flex h-2.5 overflow-hidden rounded-sm">
           <div
             className={`w-[22%] ${finalPhaseActive ? "bg-snu" : "bg-terminal-green"}`}
-            title="예선"
+            title="1차"
           />
           <div className="w-[8%] bg-korea" />
           <div className="flex-1 bg-[var(--border)]" title="멘토링" />
           <div
             className={`w-[18%] ${finalPhaseActive ? "bg-terminal-green" : "bg-hanyang"}`}
-            title="본선"
+            title="2차"
           />
         </div>
         <div className="mt-2 flex justify-between font-mono text-xs text-[var(--muted)]">
           <span>6.22 참가자 확정 및 안내</span>
           <span className="text-terminal-amber">AWS 멘토링</span>
-          <span>7.4 본선 최종 발표</span>
+          <span>7.11 2차 최종 발표</span>
         </div>
       </div>
     </Section>

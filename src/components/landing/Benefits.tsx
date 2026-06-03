@@ -11,8 +11,8 @@ export default function Benefits() {
             시상 및 <span className="font-mono text-terminal-green">참가 혜택</span>
           </SectionTitle>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-            예선에서 선발된 우수 12팀은 본선 최종 발표에 진출하며, AWS 현업
-            전문가 멘토링을 통해 프로덕트와 비즈니스 모델을 구체화합니다.
+            1차 개발 밋업에서 선발된 12팀은 2차 최종 발표에 진출하며, AWS
+            멘토링을 통해 프로덕트와 비즈니스 모델을 구체화합니다.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function Benefits() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 border-t border-[var(--border)]/70 pt-4 text-sm leading-relaxed text-[var(--muted)]">
+            <p className="mt-5 border-t border-[var(--border)]/70 pt-4 text-xs leading-relaxed text-[var(--muted)]">
               {HACKATHON.awardNote}
             </p>
           </article>

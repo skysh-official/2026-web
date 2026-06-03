@@ -1,6 +1,10 @@
 import { HACKATHON } from "@/lib/hackathon";
 import { Section, SectionLabel, SectionTitle } from "@/components/landing/Section";
 
+const AWARD_SUMMARY = HACKATHON.awards
+  .map((award) => `${award.rank} ${award.prize}`)
+  .join(", ");
+
 const FAQS = [
   {
     q: "참가자 확정 및 안내는 언제인가요?",
@@ -24,11 +28,11 @@ const FAQS = [
   },
   {
     q: "어떤 혜택이 있나요?",
-    a: "우수 12팀은 본선에 진출하며, AWS 현업 전문가 멘토링, 개발 환경, 식사와 간식이 제공됩니다.",
+    a: "1차 개발 밋업에서 150명, 약 40팀 중 12팀을 선발하며, 2차 최종 발표 전 AWS 멘토링이 있을 예정입니다. 개발 환경, 식사와 간식도 제공됩니다.",
   },
   {
     q: "시상은 어떻게 되나요?",
-    a: `대상 150만원, 최우수상 100만원, 은상 50만원, 동상 50만원 상당 비트코인을 시상합니다. ${HACKATHON.awardNote}`,
+    a: `${AWARD_SUMMARY}을 시상합니다. ${HACKATHON.awardNote}`,
   },
   {
     q: "문의는 어디로 하면 되나요?",
