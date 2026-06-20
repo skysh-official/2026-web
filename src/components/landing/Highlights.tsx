@@ -16,7 +16,7 @@ const ITEMS = [
   {
     key: "final",
     label: "2차 최종 발표",
-    value: "7.11(토)",
+    value: "7.12(일)",
     href: "#schedule",
     accent: "amber" as const,
   },
