@@ -84,7 +84,7 @@ export default function Hero() {
                       : "text-3xl text-terminal-amber sm:text-4xl"
                   }`}
                 >
-                  7.11
+                  7.12
                 </p>
               </div>
             </div>
