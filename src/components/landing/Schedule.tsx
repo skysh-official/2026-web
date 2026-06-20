@@ -106,7 +106,7 @@ export default function Schedule() {
         />
         <ScheduleCard
           badge="2차"
-          date="7.11 (토)"
+          date="7.12 (일)"
           title="최종 발표"
           place={DETAILS.phase2.place}
           summary={HACKATHON.posterNotes.finalSummary}
@@ -131,7 +131,7 @@ export default function Schedule() {
         <div className="mt-2 flex justify-between font-mono text-xs text-[var(--muted)]">
           <span>6.22 참가자 확정 및 안내</span>
           <span className="text-terminal-amber">AWS 멘토링</span>
-          <span>7.11 2차 최종 발표</span>
+          <span>7.12 2차 최종 발표</span>
         </div>
       </div>
     </Section>
