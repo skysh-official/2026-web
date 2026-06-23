@@ -2,7 +2,7 @@ const ITEMS = [
   {
     key: "notice",
     label: "참가자 확정 및 안내",
-    value: "6.22(월)",
+    value: "6.24(수)",
     href: "#schedule",
     accent: "amber" as const,
   },

@@ -6,10 +6,10 @@ export const HACKATHON = {
   registrationUrl: "https://forms.gle/2a6LBfbEY715mCPw7",
   instagramUrl: "https://www.instagram.com/skysh_official",
   instagramHandle: "@skysh_official",
-  dates: "6.22, 6.28, 7.12",
+  dates: "6.24, 6.28, 7.12",
   phase1Place: "올댓마인드 문래점",
   finalPlace: "AWS Korea 강남 사옥",
-  confirmationDate: "6.22(월)",
+  confirmationDate: "6.24(수)",
   sponsors: [
     {
       name: "AWS",
@@ -34,8 +34,8 @@ export const HACKATHON = {
   ],
   schedule: [
     {
-      date: "6.22",
-      day: "월",
+      date: "6.24",
+      day: "수",
       title: "참가자 확정 및 안내",
       sub: "선발 결과와 행사 세부 안내",
       phase: "notice" as const,
@@ -90,7 +90,7 @@ export const HACKATHON = {
     { rank: "특별상", prize: "10만원" },
   ],
   application: {
-    period: "접수 마감 6/20(토)",
+    period: "접수 마감 6/23(화)",
     target: "서울대·고려대·연세대·성균관대·한양대 재학생·휴학생·대학원생",
     teamRule: "개인 또는 2-4명 팀으로 신청할 수 있습니다",
     personalRule:

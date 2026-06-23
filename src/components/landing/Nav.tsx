@@ -6,6 +6,7 @@ import SkyshWordmark from "@/components/landing/SkyshWordmark";
 
 const LINKS = [
   { href: "#schedule", label: "일정" },
+  { href: "#tracks", label: "주제" },
   { href: "#benefits", label: "혜택" },
   { href: "#about", label: "소개" },
   { href: "#hosts", label: "주관" },

@@ -1,6 +1,7 @@
 "use client";
 
 import { HACKATHON } from "@/lib/hackathon";
+import { TRACKS } from "@/lib/tracks";
 import SkyshWordmark from "@/components/landing/SkyshWordmark";
 import { useFinalPhaseActive } from "@/components/landing/useFinalPhaseActive";
 
@@ -44,8 +45,30 @@ export default function Hero() {
               </a>
             </div>
             <p className="mt-3 font-mono text-xs leading-relaxed text-terminal-amber">
-              접수 마감은 6/20(토)입니다.
+              접수 마감은 6/23(화)입니다.
             </p>
+
+            <div className="mt-5 max-w-2xl">
+              <p className="font-mono text-xs uppercase tracking-wider text-[var(--muted)]">
+                주제
+              </p>
+              <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                {TRACKS.map((track) => (
+                  <a
+                    key={track.title}
+                    href="#tracks"
+                    className="group min-w-0 border border-[var(--border)] bg-[var(--bg-elevated)]/45 p-3 transition hover:border-terminal-green hover:bg-[var(--bg-elevated)]/75"
+                  >
+                    <p className="font-mono text-xs font-semibold uppercase tracking-wider text-terminal-amber">
+                      {track.title}
+                    </p>
+                    <p className="mt-1 text-sm font-bold leading-tight text-[var(--fg)] group-hover:text-terminal-green">
+                      {track.subtitle}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="emphasis-panel emphasis-panel--theme min-w-0 break-words lg:sticky lg:top-[calc(var(--site-header-h)+1rem)]">

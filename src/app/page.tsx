@@ -2,6 +2,7 @@ import Nav from "@/components/landing/Nav";
 import Hero from "@/components/landing/Hero";
 import Highlights from "@/components/landing/Highlights";
 import Schedule from "@/components/landing/Schedule";
+import Tracks from "@/components/landing/Tracks";
 import Benefits from "@/components/landing/Benefits";
 import About from "@/components/landing/About";
 import Hosts from "@/components/landing/Hosts";
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <Highlights />
         <Schedule />
+        <Tracks />
         <Benefits />
         <Apply />
         <About />

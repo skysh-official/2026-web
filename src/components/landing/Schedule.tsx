@@ -88,7 +88,7 @@ export default function Schedule() {
       <div className="mt-8 grid gap-4 sm:mt-10 lg:grid-cols-3">
         <ScheduleCard
           badge="안내"
-          date="6.22 (월)"
+          date="6.24 (수)"
           title="참가자 확정 및 안내"
           place={DETAILS.notice.place}
           summary="선발 결과와 행사 안내"
@@ -129,7 +129,7 @@ export default function Schedule() {
           />
         </div>
         <div className="mt-2 flex justify-between font-mono text-xs text-[var(--muted)]">
-          <span>6.22 참가자 확정 및 안내</span>
+          <span>6.24 참가자 확정 및 안내</span>
           <span className="text-terminal-amber">AWS 멘토링</span>
           <span>7.12 2차 최종 발표</span>
         </div>
