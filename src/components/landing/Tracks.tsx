@@ -1,6 +1,7 @@
 import { Section, SectionLabel, SectionTitle } from "@/components/landing/Section";
 import {
   TRACK_CHECKPOINTS,
+  TRACK_DISCLAIMER,
   TRACKS,
   UPBIT_GUIDE,
   UPBIT_RESOURCES,
@@ -20,6 +21,14 @@ export default function Tracks() {
             공포와 탐욕, 정보와 시간의 비대칭처럼 투자 경험을 어렵게 만드는
             변수를 기술로 다루는 프로덕트를 제안해 주세요.
           </p>
+          <div className="mt-5 max-w-xl border-l-2 border-terminal-amber bg-[var(--bg-elevated)]/50 py-3 pl-4 pr-3">
+            <p className="font-mono text-xs font-semibold uppercase tracking-wider text-terminal-amber">
+              {TRACK_DISCLAIMER.title}
+            </p>
+            <p className="mt-2 text-xs leading-relaxed text-[var(--muted)]">
+              {TRACK_DISCLAIMER.body}
+            </p>
+          </div>
 
           <p className="mt-6 font-mono text-xs uppercase tracking-wider text-[var(--muted)]">
             공식 리소스

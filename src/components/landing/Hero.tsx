@@ -1,7 +1,7 @@
 "use client";
 
 import { HACKATHON } from "@/lib/hackathon";
-import { TRACKS } from "@/lib/tracks";
+import { TRACK_DISCLAIMER, TRACKS } from "@/lib/tracks";
 import SkyshWordmark from "@/components/landing/SkyshWordmark";
 import { useFinalPhaseActive } from "@/components/landing/useFinalPhaseActive";
 
@@ -67,6 +67,14 @@ export default function Hero() {
                     </p>
                   </a>
                 ))}
+              </div>
+              <div className="mt-3 border-l-2 border-terminal-amber bg-[var(--bg-elevated)]/45 py-2.5 pl-3 pr-2">
+                <p className="font-mono text-[0.6875rem] font-semibold uppercase tracking-wider text-terminal-amber">
+                  {TRACK_DISCLAIMER.title}
+                </p>
+                <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">
+                  {TRACK_DISCLAIMER.body}
+                </p>
               </div>
             </div>
           </div>
